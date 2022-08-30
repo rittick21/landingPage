@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --logo: rgb(255, 255, 255);
+    --l:#640606;
+    --rc:red;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(90, 86, 86, 0.8),rgba(240, 233, 233, 0)), url('backGround/landingPage.jpg');
+    background-size: cover;
+    position: relative;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+}
+.logo strong{
+    color:var(--logo);
+    font-weight: 400;
+}
+.logo span{
+    font-size: larger;
+    color: var(--rc);
+    font-weight: bolder;
+}
+.menu-bar{
+    font-size: 20px;
+}
+.menu-bar a{
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--logo);
+    font-weight: bolder;
+    margin-top: 1rem;
+    position: relative;
+    transition: 0.3s linear;
+}
+.menu-bar a:hover{
+    color: var(--rc);
+}
+.button{
+    width: 7rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: var(--rc);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2px;
+    margin-top: 0.5rem;
+    transition: 0.3s linear;
+}
+.button:hover{
+    background-color: transparent;
+    border: 0.1rem solid var(--rc);
+
+}
+.content{
+    height: 30vh;
+    max-width: 350px;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--logo);
+    transform: translate(-50%,-50%);
+}
+section button{
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color: var(--rc);
+    border-radius: 1rem;
+    transition: 0.3s linear;
+}
+section button:hover{
+    background-color: transparent;
+    border: 0.1rem solid var(--rc);
+}
+section button a{
+    text-decoration: none;
+    color: var(--logo);
+    font-size: large;
+    font-weight: 500;
+}
+
